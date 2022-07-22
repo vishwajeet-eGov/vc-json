@@ -1,0 +1,53 @@
+{
+    "@context": {
+      "@version": 1.1,
+      "@protected": true,
+      "id": "@id",
+      "type": "@type",
+      "schema": "https://schema.org/",
+      "vac": "https://cowin.gov.in/credentials/vaccination/v2",
+      "ProofOfVaccinationCredential":{
+        "@id": "schema:ProofOfVaccinationCredential",
+        "@context": {
+          "@version": 1.1,
+          "@protected": true,
+          "nonTransferable": "vac:nonTransferable"
+        }
+      },
+      "Person": {
+        "@id": "schema:Person",
+        "@context": {
+          "@version": 1.1,
+          "@protected": true,
+          "refId": "schema:id",
+          "uhid": "schema:id",
+          "name": "schema:name",
+          "dob": "schema:date",
+          "PreEnrolmentCode": "schema:Text"
+        }
+      },
+      "Vaccination": {
+        "@id": "vac:Vaccination",
+        "@context": {
+          "@version": 1.1,
+          "@protected": true,
+          "vaccineType": "schema:name",
+          "doseNo": "schema:doseValue",
+          "dateofVaccination": "schema:date",
+          "countryOfVaccination": "schema:name",
+          "validity": "schema:date"
+        }
+      },
+        "Issuer":{
+            "@id": "schema:Issuer",
+            "@context": {
+              "@version": 1.1,
+              "@protected": true,
+              "certificateId": "schema:id",
+              "certificateIssuer": "schema:name",
+              "issuanceDate": "schema:date"
+            }
+        }
+      }
+    }
+  }
